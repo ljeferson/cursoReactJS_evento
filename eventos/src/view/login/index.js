@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './login.css'
 
 function Login(){
+
+    function logar(){
+        alert('Vamos logar!!');
+    }
+
     return(
         <div className="login-content d-flex align-items-center">
                 <form className="form-signin mx-auto">
@@ -12,7 +17,7 @@ function Login(){
 
                     <input type="password" id="inputPassword" class="form-control my-2" placeholder="Password"/>
 
-                    <button className="btn btn-lg btn-block btn-login" type="submit">Sign in</button>
+                    <button onClick={logar} className="btn btn-lg btn-block btn-login" type="button">Logar</button>
 
                     <div className="msg-login text-white text-center my-5">
                         <span><strong>WoW! </strong>Você está conectado! &#128526; </span>
