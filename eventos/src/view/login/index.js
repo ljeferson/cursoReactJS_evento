@@ -3,6 +3,9 @@ import './login.css'
 
 function Login(){
 
+    const [email, setEmail] = useState();
+    const [senha, setSenha] = useState();
+
     function logar(){
         alert('Vamos logar!!');
     }
