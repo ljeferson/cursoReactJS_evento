@@ -63,8 +63,8 @@ function NovoUsuario(){
                 
 
                 <div className="msg-login text-black text-center my-5">
-                    {msgTipo === 'sucesso' && <span><strong>WoW! </strong>Usuário Cadastrado com sucesso! &#128526; </span>}
-                    {msgTipo === 'erro' && <span><strong>Ops! </strong> {msg} &#128546; </span>}
+                    {msgTipo === 'sucesso' && <span className="emoji" role="img" aria-label="teste"><strong>WoW! </strong>Usuário Cadastrado com sucesso! &#128526; </span>}
+                    {msgTipo === 'erro' && <span className="emoji" role="img" aria-label="triste"><strong>Ops! </strong> {msg} &#128546; </span>}
                 </div>
             </form>
         </div>

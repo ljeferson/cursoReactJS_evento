@@ -25,7 +25,7 @@ function Login(){
         <div className="login-content d-flex align-items-center">
                 <form className="form-signin mx-auto">
                 <div className= "mb-4 text-center">
-    <h1 className="h3 mb-3 font-weight-normal text-white font-weight-bold">Login</h1>
+                <h1 className="h3 mb-3 font-weight-normal text-white font-weight-bold">Login</h1>
                     <div className= "mb-4 text-center">
 
 
@@ -35,8 +35,8 @@ function Login(){
                         <button onClick={logar} className="btn btn-lg btn-block btn-login" type="button">Logar</button>
 
                         <div className="msg-login text-white text-center my-5">
-                            {msgTipo == 'sucesso' && <span><strong>WoW! </strong>Você está conectado! &#128526; </span>}
-                            {msgTipo == 'erro' && <span><strong>Ops! </strong>Verifique senha ou usuário estão corretos! &#128546; </span>}
+                            {msgTipo === 'sucesso' && <span className="emoji" role="img" aria-label="alegre"><strong>WoW! </strong>Você está conectado! &#128526; </span>}
+                            {msgTipo === 'erro' && <span className="emoji" role="img" aria-label="triste"><strong>Ops! </strong>Verifique senha ou usuário estão corretos! &#128546; </span>}
                         </div>
 
                         <div className="opcoes-login mt-5 text-center">
